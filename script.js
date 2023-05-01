@@ -22,7 +22,7 @@ function playRound(playerSelection, computerSelection){
     }
 
     else{
-        result = "You Win!" + playerSelection + " beats " + computerSelection;
+        result = "You Win! " + playerSelection + " beats " + computerSelection;
         lastRoundResult = 2;
     }
 

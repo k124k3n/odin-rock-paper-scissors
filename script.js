@@ -1,4 +1,5 @@
 let choiceList = [`Rock`, `Paper`, `Scissors`];
+let lastRoundResult;
 
 function getComputerChoice(){
     let randomNum = Math.floor(Math.random() * 3);
@@ -12,15 +13,19 @@ function playRound(playerSelection, computerSelection){
     let result;
     if((playerIndex+1)%3 === computerIndex){
         result = "You Lose! " + computerSelection + " beats " + playerSelection;
+        lastRoundResult = 0;
     }
 
     else if(playerIndex === computerIndex){
         result = "Draw!";
+        lastRoundResult = 1;
     }
 
     else{
         result = "You Win!" + playerSelection + " beats " + computerSelection;
+        lastRoundResult = 2;
     }
 
     return result;
 }
+

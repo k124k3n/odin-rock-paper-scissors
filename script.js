@@ -29,3 +29,14 @@ function playRound(playerSelection, computerSelection){
     return result;
 }
 
+function game(){
+    let winCount = 0;
+    for(let i = 1; i <= 5; i++){
+        let playerSelection = prompt("Input your choice!: (Rock/Paper/Scissors_");
+        let computerSelection = getComputerChoice();
+        console.log("Round " + i + ": " + playRound());
+
+        winCount += (lastRoundResult === 2);
+    }
+    prompt("Win: " + winCount + " times");
+}

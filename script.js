@@ -32,7 +32,7 @@ function playRound(playerSelection, computerSelection){
 function game(){
     let winCount = 0;
     for(let i = 1; i <= 5; i++){
-        let playerSelection = prompt("Input your choice!: (Rock/Paper/Scissors_");
+        let playerSelection = prompt("Input your choice!: (Rock/Paper/Scissors)");
         let computerSelection = getComputerChoice();
         prompt("Round " + i + ": " + playRound(playerSelection, computerSelection));
 

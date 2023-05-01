@@ -34,7 +34,7 @@ function game(){
     for(let i = 1; i <= 5; i++){
         let playerSelection = prompt("Input your choice!: (Rock/Paper/Scissors_");
         let computerSelection = getComputerChoice();
-        console.log("Round " + i + ": " + playRound());
+        prompt("Round " + i + ": " + playRound(playerSelection, computerSelection));
 
         winCount += (lastRoundResult === 2);
     }
